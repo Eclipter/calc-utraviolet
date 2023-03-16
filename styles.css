@@ -1,0 +1,96 @@
+:root {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font: 1rem Courier;
+  --bg: #d58fff;
+  --calc_body: #31006f;
+  --font: #310062;
+  --btn: #cbb9ff;
+  --input_border: #310062;
+  --btn_border: white;
+  --operators: #ab82ff;
+  --clear: #4000be;
+}
+
+.bg {
+  background: linear-gradient(135deg, white, var(--bg));
+}
+
+.sign {
+  color: var(--font);
+  margin: 7% 18%;
+  font-size: 3rem;
+}
+
+.sign:hover {
+  margin: 6% 13%;
+  font-size: 3.5rem;
+  animation: sign infinite alternate linear;
+  animation-duration: 2s;
+}
+
+.calc {
+  background-color: var(--calc_body);
+  box-shadow: 5px 5px 4px 3px;
+  border-radius: 35px;
+  margin: 7% 35%;
+}
+
+.input {
+  border: var(--input_border) 2px solid;
+  border-radius: 30px;
+  font-size: 2.5rem;
+  text-align: right;
+  font-family: inherit;
+  color: var(--font);
+  padding-right: 15px;
+  padding-top: 14px;
+  width: 200px;
+  height: 50px;
+  margin-top: 3px;
+}
+
+.btn {
+  font-family: inherit;
+  width: 50px;
+  height: 50px;
+  color: var(--font);
+  border: var(--btn_border) 2px solid;
+  border-radius: 50px;
+  background: linear-gradient(135deg, white, var(--btn));
+  box-shadow: 0 0 5px 3px var(--btn);
+  cursor: pointer;
+}
+
+.operators {
+  background: linear-gradient(135deg, white, var(--operators) 60%);
+  box-shadow: 0 0 5px 3px var(--operators);
+}
+
+.clear {
+  background: linear-gradient(135deg, white, var(--clear) 80%);
+  box-shadow: 0 0 5px 3px var(--clear);
+}
+
+.horizontal {
+  width: 115px;
+}
+
+.btn:hover {
+  transform: translate(-1px, -1px);
+}
+
+.btn:active {
+  transform: translate(1px, 1px);
+}
+
+@keyframes sign {
+  from {
+    color: var(--operators);
+  }
+  to {
+    color: var(--clear);
+  }
+}
