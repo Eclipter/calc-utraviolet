@@ -1,128 +1,131 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  
   <head>
-    <meta name="viewport" content="width=320, initial-scale=1">
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=320, initial-scale=1" />
+    <meta charset="utf-8" />
     <title>[Calc_Ultraviolet]</title>
-    <link rel="shortcut icon" href="calc_pic.PNG" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="calc_pic.PNG" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  
+
   <body class="bg">
-    
     <p class="sign"><b>[Calc_Ultraviolet]</b></p>
-    
+
     <table class="calc" cellspacing="10">
-      
       <tr>
         <td colspan="4">
-          <input class="input" type="text" id="disp" readonly="true" value="0"/>
+          <input
+            class="input"
+            type="text"
+            id="disp"
+            readonly="true"
+            value="0"
+          />
         </td>
       </tr>
-      
+
       <tr>
         <td>
           <button class="btn clear" onclick="clearAll()">
-              <b>C</b>
-          </button>
-        </td>     
-        <td>
-          <button class="btn operators" onclick="opBtn('ДОДЕЛАТЬ')">
-              <b>±</b>
+            <b>C</b>
           </button>
         </td>
         <td>
           <button class="btn operators" onclick="opBtn('ДОДЕЛАТЬ')">
-              <b>%</b>
+            <b>±</b>
+          </button>
+        </td>
+        <td>
+          <button class="btn operators" onclick="opBtn('ДОДЕЛАТЬ')">
+            <b>%</b>
           </button>
         </td>
         <td>
           <button class="btn operators" onclick="opBtn('/')">
-              <b>÷</b>
+            <b>÷</b>
           </button>
         </td>
       </tr>
-      
+
       <tr>
         <td>
           <button class="btn" onclick="numBtn('7')">
-              <b>7</b>
+            <b>7</b>
           </button>
         </td>
         <td>
           <button class="btn" onclick="numBtn('8')">
-              <b>8</b>
+            <b>8</b>
           </button>
         </td>
         <td>
           <button class="btn" onclick="numBtn('9')">
-              <b>9</b>
+            <b>9</b>
           </button>
         </td>
         <td>
           <button class="btn operators" onclick="opBtn('*')">
-              <b>×</b>
+            <b>×</b>
           </button>
         </td>
       </tr>
-      
+
       <tr>
         <td>
           <button class="btn" onclick="numBtn('4')">
-              <b>4</b>
+            <b>4</b>
           </button>
         </td>
         <td>
           <button class="btn" onclick="numBtn('5')">
-              <b>5</b>
+            <b>5</b>
           </button>
         </td>
         <td>
           <button class="btn" onclick="numBtn('6')">
-              <b>6</b>
+            <b>6</b>
           </button>
         </td>
         <td>
           <button class="btn operators" onclick="opBtn('-')">
-              <b>–</b>
+            <b>–</b>
           </button>
         </td>
       </tr>
-      
+
       <tr>
         <td>
           <button class="btn" onclick="numBtn('1')">
-              <b>1</b>
+            <b>1</b>
           </button>
         </td>
         <td>
           <button class="btn" onclick="numBtn('2')">
-              <b>2</b>
+            <b>2</b>
           </button>
         </td>
         <td>
           <button class="btn" onclick="numBtn('3')">
-              <b>3</b>
+            <b>3</b>
           </button>
         </td>
         <td>
           <button class="btn operators" onclick="opBtn('+')">
-              <b>+</b>
+            <b>+</b>
           </button>
         </td>
       </tr>
-      
+
       <tr>
-         <td colspan="2">
-           <button class="btn horizontal" onclick="numBtn('0')">
-              <b>0</b>
-           </button>  
+        <td colspan="2">
+          <button class="btn horizontal" onclick="numBtn('0')">
+            <b>0</b>
+          </button>
         </td>
         <td>
           <button class="btn" onclick="ДОДЕЛАТЬ">
-              <b>,</b>
+            <b>,</b>
           </button>
         </td>
         <td>
@@ -131,11 +134,8 @@
           </button>
         </td>
       </tr>
-      
     </table>
-    
-  <script src="app.js"></script>
-    
+
+    <script src="app.js"></script>
   </body>
-  
 </html>
